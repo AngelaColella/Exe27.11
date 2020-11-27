@@ -81,13 +81,9 @@ namespace Exe27._11
 
             #region Scrivere un extension method della classe Persona ( VeicoliPosseduti(List<Veicoli> elencoVeicoli) ) che restituisca l’elenco dei veicoli posseduti (campi: ID, Targa, Prezzo)
             Persona p1 = new Persona { ID = 1, Nome = "Anna", Cognome = "Rossi", Nazione = "Italia" };
-            Persona p2 = new Persona { ID = 2, Nome = "Fabrizio", Cognome = "Bianchi", Nazione = "Italia" };
-            Persona p3 = new Persona { ID = 3, Nome = "Mario", Cognome = "Rossi", Nazione = "Italia" };
-            Persona p4 = new Persona { ID = 4, Nome = "Anna", Cognome = "Verdi", Nazione = "Italia" };
-            Persona p5 = new Persona { ID = 5, Nome = "Charlie", Cognome = "Williams", Nazione = "UK" };
-            Persona p6 = new Persona { ID = 6, Nome = "John", Cognome = "Smith", Nazione = "USA" };
 
             List<VeicoloPosseduto> veicoliPossiduti = p1.VeicoliPosseduti(carList);
+
             var numVeicoli_p1 = veicoliPossiduti.Count;
             Console.WriteLine($"\n \n Il proprietario {p1.ID} ha {numVeicoli_p1} veicoli: \n");
             foreach (var v in veicoliPossiduti)
@@ -127,7 +123,7 @@ namespace Exe27._11
                 .Where(p => p.FirstName == "Anna" || p.FirstName == "Fabrizio")
                 .Select(p => new { Nome = p.FirstName, Cognome = p.LastName });
 
-            // Stampa risultati
+            // Stampa dei risultati
             Console.WriteLine("\n \n");
             foreach (var p in filteredList1)
             {
