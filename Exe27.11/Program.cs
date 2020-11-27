@@ -88,7 +88,7 @@ namespace Exe27._11
             Console.WriteLine($"\n \n Il proprietario {p1.ID} ha {numVeicoli_p1} veicoli: \n");
             foreach (var v in veicoliPossiduti)
             {
-                Console.WriteLine($"prezzo: {v.Prezzo} e a targa: {v.Targa}");
+                Console.WriteLine($"ID veicolo: {v.ID}, prezzo: {v.Prezzo} e a targa: {v.Targa}");
 
             } 
             #endregion

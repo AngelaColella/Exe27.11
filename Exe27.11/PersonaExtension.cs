@@ -18,7 +18,7 @@ namespace Exe27._11
                  where v.IDProprietario == id
                  select new VeicoloPosseduto()
                  { 
-                   ID = v.IDProprietario, 
+                   ID = v.ID,
                    Targa = v.Targa, 
                    Prezzo = v.Prezzo
                  }
